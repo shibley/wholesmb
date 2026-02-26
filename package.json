@@ -1,0 +1,10 @@
+{
+  "name": "wholesmb",
+  "version": "1.0.0",
+  "description": "WholeSMB — Independent B2B SaaS comparisons for small businesses",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  }
+}
