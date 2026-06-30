@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WholeSMB — Find the Right Software Tools for Your Business</title>
-  <meta name="description" content="Independent, data-driven software comparisons for small and mid-size businesses. Compare CRM, payroll, project management, marketing tools and more for teams of 1–200.">
+
+  <title>WholeSMB — Buy a Profitable Small Business</title>
+  <meta name="description" content="Your guide to buying a small business: how to find businesses for sale, evaluate them, finance the deal with SBA loans or seller financing, and close with confidence.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://wholesmb.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="WholeSMB — Find the Right Software Tools for Your Business">
-  <meta property="og:description" content="Independent, data-driven software comparisons for small and mid-size businesses.">
+  <meta property="og:title" content="WholeSMB — Buy a Profitable Small Business">
+  <meta property="og:description" content="Your guide to finding, evaluating, financing, and buying a small business — from laundromats to online stores.">
   <meta property="og:url" content="https://wholesmb.com/">
   <meta property="og:site_name" content="WholeSMB">
-  <meta property="og:image" content="https://wholesmb.com/img/og-default.png">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="WholeSMB — Find the Right Tools for Your Business">
-  <meta name="twitter:description" content="Independent software comparisons for SMBs.">
+  <meta name="twitter:title" content="WholeSMB — Buy a Profitable Small Business">
+  <meta name="twitter:description" content="Your guide to buying a small business: find, evaluate, finance, and close.">
 
   <!-- Favicon -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -32,6 +32,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Schema: WebSite + Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "WholeSMB",
+    "url": "https://wholesmb.com/",
+    "description": "Guides and listings for finding, financing, and buying a profitable small business."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "WholeSMB",
+    "url": "https://wholesmb.com/",
+    "logo": "https://wholesmb.com/favicon.svg",
+    "description": "WholeSMB is a content resource for people who want to buy a small business — covering acquisition strategy, due diligence, financing, and where to find businesses for sale.",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Bity LLC",
+      "url": "https://bity.llc"
+    }
+  }
+  </script>
   <script defer src="/_vercel/insights/script.js"></script>
   <script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
@@ -49,200 +75,142 @@
       </button>
       <div class="nav-links">
         <a href="/" class="active">Home</a>
-        <div class="nav-dropdown">
-          <a class="nav-dropdown-toggle">Categories</a>
-          <div class="nav-dropdown-menu">
-            <a href="/comparisons/?cat=crm">CRM</a>
-            <a href="/comparisons/?cat=payroll-hr">Payroll &amp; HR</a>
-            <a href="/comparisons/?cat=project-management">Project Management</a>
-            <a href="/comparisons/?cat=marketing">Marketing Tools</a>
-            <a href="/comparisons/?cat=ai-tools">AI Tools</a>
-            <a href="/comparisons/?cat=finance">Finance &amp; Payments</a>
-          </div>
-        </div>
+        <a href="/acquire/">Buy a Business</a>
+        <a href="/acquire/how-to-buy-a-business">Guides</a>
         <a href="/about.html">About</a>
-        <a href="/about.html#methodology">Methodology</a>
       </div>
     </nav>
   </header>
 
-  <!-- ===== Hero ===== -->
-  <section class="hero">
+  <!-- ===== Page Header / Hero ===== -->
+  <section class="page-header">
     <div class="container">
-      <h1>Find the <span>Right Tools</span> for Your Business</h1>
-      <p>Independent, data-driven software comparisons for teams of 1–200. No fluff, no pay-to-play rankings — just honest analysis from people who've run small businesses.</p>
-
-      <div class="hero-search">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="text" placeholder="Search comparisons… e.g. &quot;HubSpot vs Salesforce&quot;" aria-label="Search comparisons">
+      <h1>Buy a Profitable Small Business</h1>
+      <p>WholeSMB is your guide to buying a small business. We help you find businesses for sale, evaluate whether a deal is worth it, finance the purchase, and close with confidence &mdash; whether you want a laundromat in your town or an online store you can run from anywhere.</p>
+      <div class="cta-buttons">
+        <a href="/acquire/" class="btn btn-primary btn-lg">Start Here: Buy a Business &rarr;</a>
+        <a href="/acquire/how-to-buy-a-business" class="btn btn-outline btn-lg">Read the Full Guide</a>
       </div>
-
-      <a href="#categories" class="btn btn-primary btn-lg">Browse Categories</a>
-
-      <div class="trust-bar">
-        <span>
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Independent Reviews
-        </span>
-        <span>
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          Updated February 2026
-        </span>
-        <span>
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          Built for SMBs
-        </span>
-      </div>
+      <p style="font-size:.813rem;color:var(--color-text-light);margin-top:8px">
+        &#8505; <em>This page may contain affiliate links. See our <a href="/disclosure.html">disclosure</a>.</em>
+      </p>
     </div>
   </section>
 
-  <!-- ===== Categories ===== -->
-  <section id="categories" class="section">
+  <!-- ===== Content ===== -->
+  <section class="content">
     <div class="container">
-      <h2 class="section-title text-center">Browse by Category</h2>
-      <p class="section-subtitle text-center" style="margin-left:auto;margin-right:auto">Pick a category to see head-to-head comparisons of the most popular tools.</p>
+      <div class="content-body" style="max-width:100%">
 
-      <div class="categories-grid">
-        <a href="/comparisons/?cat=crm" class="category-card">
-          <div class="category-icon">🤝</div>
-          <h3>CRM</h3>
-          <p>Manage contacts, deals, and pipelines</p>
-        </a>
-        <a href="/comparisons/?cat=payroll-hr" class="category-card">
-          <div class="category-icon">💰</div>
-          <h3>Payroll &amp; HR</h3>
-          <p>Pay your team and stay compliant</p>
-        </a>
-        <a href="/comparisons/?cat=project-management" class="category-card">
-          <div class="category-icon">📋</div>
-          <h3>Project Management</h3>
-          <p>Plan, track, and ship work together</p>
-        </a>
-        <a href="/comparisons/?cat=marketing" class="category-card">
-          <div class="category-icon">📣</div>
-          <h3>Marketing Tools</h3>
-          <p>Email, SEO, social, and automation</p>
-        </a>
-        <a href="/comparisons/?cat=finance" class="category-card">
-          <div class="category-icon">🏦</div>
-          <h3>Finance &amp; Payments</h3>
-          <p>Invoicing, accounting, and payments</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== How It Works ===== -->
-  <section class="section section-alt">
-    <div class="container">
-      <h2 class="section-title text-center">How We Compare Software</h2>
-      <p class="section-subtitle text-center" style="margin-left:auto;margin-right:auto">We actually test these tools. No pay-to-play, no sponsored rankings.</p>
-
-      <div class="steps-grid">
-        <div>
-          <div class="step-number">1</div>
-          <h3>Real-World Testing</h3>
-          <p>We sign up, set up, and use each tool the way a small business would — not from a press release.</p>
+        <div class="verdict-box">
+          <h2>Buying beats building &mdash; if you do it right</h2>
+          <p>Most new businesses never reach profitability. Buying an established business flips that risk: you inherit existing revenue, customers, suppliers, and a proven track record from day one. The hard part isn't finding the courage to start &mdash; it's knowing how to find the right deal, what to check before you sign, and how to pay for it without draining your savings. That's what WholeSMB is built to teach.</p>
         </div>
-        <div>
-          <div class="step-number">2</div>
-          <h3>SMB-Focused Criteria</h3>
-          <p>We evaluate on what actually matters to teams of 1–200: price per seat, ease of setup, support quality, and hidden costs.</p>
+
+        <h2>Explore our guides &amp; listings</h2>
+        <p>Whether you're just curious about acquisitions or you're ready to make an offer, start with the pages below.</p>
+
+        <div class="comparisons-grid" style="margin-top:20px">
+          <a href="/acquire/" class="comparison-card">
+            <span class="comparison-card-badge">Hub</span>
+            <h3>Buy a Business</h3>
+            <p>The starting point: how acquisitions work, financing options, and where to find businesses for sale.</p>
+          </a>
+          <a href="/acquire/how-to-buy-a-business" class="comparison-card">
+            <span class="comparison-card-badge">Guide</span>
+            <h3>How to Buy a Business</h3>
+            <p>The complete step-by-step guide: finding deals, valuation, due diligence, SBA loans, and seller financing.</p>
+          </a>
+          <a href="/acquire/businesses-for-sale-nj" class="comparison-card">
+            <span class="comparison-card-badge">Local</span>
+            <h3>Businesses for Sale in NJ</h3>
+            <p>Finding and evaluating businesses for sale in New Jersey, popular industries, and where listings live.</p>
+          </a>
+          <a href="/acquire/businesses-for-sale-online" class="comparison-card">
+            <span class="comparison-card-badge">Category</span>
+            <h3>Businesses for Sale Online</h3>
+            <p>How to buy ecommerce stores, SaaS, and content sites &mdash; where to find them and what to check.</p>
+          </a>
+          <a href="/acquire/buy-a-laundromat" class="comparison-card">
+            <span class="comparison-card-badge">Playbook</span>
+            <h3>Buy a Laundromat</h3>
+            <p>The economics of laundromats: costs, financing, what to inspect, and the real pros and cons.</p>
+          </a>
+          <a href="/acquire/businesses-for-sale-laundromat" class="comparison-card">
+            <span class="comparison-card-badge">Listings</span>
+            <h3>Laundromats for Sale</h3>
+            <p>Where laundromats are listed, typical price ranges, and how to evaluate a specific listing.</p>
+          </a>
         </div>
-        <div>
-          <div class="step-number">3</div>
-          <h3>Honest Verdicts</h3>
-          <p>Every comparison has a clear recommendation. We tell you which tool is better for your situation — and why.</p>
+
+        <h2>How buying a business works</h2>
+        <p>Every acquisition follows the same four stages. WholeSMB walks you through each one with practical, honest detail &mdash; no hype, no get-rich-quick promises.</p>
+
+        <h3>1. Find</h3>
+        <p>Most small businesses are sold through online marketplaces and brokers. Main-street businesses &mdash; restaurants, laundromats, service companies &mdash; tend to show up on broker platforms like <strong>BizBuySell</strong>, while online businesses (ecommerce, SaaS, content sites) are concentrated on <strong>Flippa</strong> and <strong>Empire Flippers</strong>. Knowing where the listings for your target type live saves months of searching.</p>
+
+        <h3>2. Evaluate</h3>
+        <p>Once you find a candidate, the work shifts to due diligence: verifying the seller's revenue and profit claims, understanding why they're selling, checking customer concentration, lease terms, and any liabilities you'd inherit. A common shorthand for valuation is a multiple of seller's discretionary earnings (SDE) &mdash; small businesses often trade for roughly 2&ndash;4x SDE, but the right number depends on growth, risk, and how much of the business depends on the current owner.</p>
+
+        <h3>3. Finance</h3>
+        <p>You rarely need the full purchase price in cash. The <strong>SBA 7(a) loan</strong> program is the most common path for U.S. buyers, financing a large share of the price for qualifying acquisitions. On top of that, roughly <strong>60% of small-business sales involve some seller financing</strong> &mdash; the seller carries a note for part of the price, which both lowers your upfront cash and keeps the previous owner invested in a smooth handoff.</p>
+
+        <h3>4. Close</h3>
+        <p>The final stage covers the purchase agreement, transition planning, and the legal mechanics of transferring ownership. A good closing protects you with reps and warranties, a clear transition period with the seller, and sometimes an earnout that ties part of the price to future performance. Done well, you walk away owning a cash-flowing business instead of a risky startup.</p>
+
+        <h2>Who WholeSMB is for</h2>
+        <p>We write for first-time buyers and aspiring owner-operators &mdash; people who'd rather acquire a working business than gamble on a startup. You don't need a finance background or millions in the bank. You need a clear-eyed understanding of how deals actually get done, and that's exactly what these guides provide. Start with the <a href="/acquire/">Buy a Business hub</a>, then dig into whichever niche or location fits your goals.</p>
+
+        <div class="cta-buttons">
+          <!-- AFFILIATE: replace with Flippa/Empire Flippers affiliate link -->
+          <a href="https://flippa.com/businesses" class="btn btn-primary btn-lg" rel="nofollow sponsored" target="_blank">Browse Businesses on Flippa &rarr;</a>
+          <!-- AFFILIATE: replace with Flippa/Empire Flippers affiliate link -->
+          <a href="https://empireflippers.com/marketplace/" class="btn btn-outline btn-lg" rel="nofollow sponsored" target="_blank">Empire Flippers Marketplace &rarr;</a>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== Latest Comparisons ===== -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Latest Comparisons</h2>
-      <p class="section-subtitle">Fresh, in-depth comparisons to help you make the right choice.</p>
-
-      <div class="comparisons-grid">
-        <a href="#" class="comparison-card">
-          <span class="comparison-card-badge">CRM</span>
-          <h3>HubSpot vs Salesforce (2026)</h3>
-          <p>Which CRM is better for growing SMBs? We break down pricing, features, and ease of use for teams under 200.</p>
-          <span class="comparison-card-meta">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            Coming soon
-          </span>
-        </a>
-        <a href="/comparisons/gusto-vs-rippling.html" class="comparison-card">
-          <span class="comparison-card-badge">Payroll &amp; HR</span>
-          <h3>Gusto vs Rippling (2026)</h3>
-          <p>SMB simplicity vs unified platform. Transparent pricing, IT management, global hiring, and honest verdicts.</p>
-          <span class="comparison-card-meta">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            20 min read
-          </span>
-        </a>
-        <a href="#" class="comparison-card">
-          <span class="comparison-card-badge">Project Management</span>
-          <h3>Monday.com vs Asana (2026)</h3>
-          <p>Two project management heavyweights go head-to-head. Which one fits your workflow and budget?</p>
-          <span class="comparison-card-meta">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            Coming soon
-          </span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA ===== -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="cta-banner">
-        <h2>Stop Googling. Start Comparing.</h2>
-        <p>Get side-by-side breakdowns of the tools your business actually needs.</p>
-        <a href="#categories" class="btn btn-accent btn-lg">Browse All Categories</a>
       </div>
     </div>
   </section>
 
   <!-- ===== Footer ===== -->
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="/" class="nav-logo" style="color:#fff">Whole<span>SMB</span></a>
-          <p>Independent software comparisons for small and mid-size businesses. We test the tools so you don't have to guess.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Categories</h4>
-          <a href="/comparisons/?cat=crm">CRM</a>
-          <a href="/comparisons/?cat=payroll-hr">Payroll &amp; HR</a>
-          <a href="/comparisons/?cat=project-management">Project Management</a>
-          <a href="/comparisons/?cat=marketing">Marketing Tools</a>
-          <a href="/comparisons/?cat=finance">Finance &amp; Payments</a>
-        </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <a href="/about.html">About Us</a>
-          <a href="/about.html#methodology">Methodology</a>
-          <a href="/disclosure.html">Affiliate Disclosure</a>
-        </div>
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <a href="/privacy.html">Privacy Policy</a>
-          <a href="/disclosure.html">Disclosure</a>
-        </div>
+    <div class="container footer-grid">
+      <div>
+        <a href="/" class="footer-logo">
+          <svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#2563eb"/><path d="M7 14l4 4 10-10" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Whole<span>SMB</span>
+        </a>
+        <p>Your guide to finding, financing, and buying a profitable small business.</p>
       </div>
-      <div class="footer-bottom">
-        <span>&copy; <script>document.write(new Date().getFullYear())</script> Bity LLC. All rights reserved.copy; <span class="year"></span> Bity LLC. All rights reserved.</span>
-        <span><a href="/privacy.html">Privacy</a> · <a href="/disclosure.html">Disclosure</a></span>
+      <div>
+        <h4>Browse</h4>
+        <ul>
+          <li><a href="/acquire/how-to-buy-a-business">How to Buy a Business</a></li>
+          <li><a href="/acquire/businesses-for-sale-nj">Businesses for Sale by State</a></li>
+          <li><a href="/acquire/buy-a-laundromat">Buy a Laundromat</a></li>
+          <li><a href="/acquire/businesses-for-sale-online">Online Businesses for Sale</a></li>
+        </ul>
       </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/disclosure.html">Affiliate Disclosure</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/disclosure.html">Disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 WholeSMB. All rights reserved. WholeSMB is a <a href="https://bity.llc">Bity LLC</a> property.</p>
     </div>
   </footer>
 
   <script src="/js/main.js"></script>
-<script>document.querySelectorAll(".year").forEach(e=>e.textContent=new Date().getFullYear())</script>
 </body>
 </html>
