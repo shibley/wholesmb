@@ -88,7 +88,7 @@ def build(p):
     "@type": "BreadcrumbList",
     "itemListElement": [
       {{"@type": "ListItem", "position": 1, "name": "Home", "item": "{BASE}/"}},
-      {{"@type": "ListItem", "position": 2, "name": "Buy a Business", "item": "{BASE}/acquire/"}},
+      {{"@type": "ListItem", "position": 2, "name": "Buy a Business", "item": "{BASE}/acquire"}},
       {{"@type": "ListItem", "position": 3, "name": "{p['crumb']}"}}
     ]
   }}
@@ -134,7 +134,7 @@ def build(p):
       </button>
       <div class="nav-links">
         <a href="/">Home</a>
-        <a href="/acquire/">Buy a Business</a>
+        <a href="/acquire">Buy a Business</a>
         <a href="/acquire/how-to-buy-a-business">Guides</a>
         <a href="/about.html">About</a>
       </div>
@@ -145,7 +145,7 @@ def build(p):
   <div class="container">
     <div class="breadcrumb">
       <a href="/">Home</a> <span>/</span>
-      <a href="/acquire/">Buy a Business</a> <span>/</span>
+      <a href="/acquire">Buy a Business</a> <span>/</span>
       {p['crumb']}
     </div>
   </div>

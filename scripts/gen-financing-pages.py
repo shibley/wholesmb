@@ -81,7 +81,7 @@ TEMPLATE = """<!DOCTYPE html>
       </button>
       <div class="nav-links">
         <a href="/">Home</a>
-        <a href="/acquire/">Buy a Business</a>
+        <a href="/acquire">Buy a Business</a>
         <a href="/acquire/how-to-buy-a-business">Guides</a>
         <a href="/about.html">About</a>
       </div>
@@ -92,7 +92,7 @@ TEMPLATE = """<!DOCTYPE html>
   <div class="container">
     <div class="breadcrumb">
       <a href="/">Home</a> <span>/</span>
-      <a href="/acquire/">Buy a Business</a> <span>/</span>
+      <a href="/acquire">Buy a Business</a> <span>/</span>
       {{CRUMB}}
     </div>
   </div>
@@ -283,7 +283,7 @@ def build(page):
         "@type": "BreadcrumbList",
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://wholesmb.com/"},
-            {"@type": "ListItem", "position": 2, "name": "Buy a Business", "item": "https://wholesmb.com/acquire/"},
+            {"@type": "ListItem", "position": 2, "name": "Buy a Business", "item": "https://wholesmb.com/acquire"},
             {"@type": "ListItem", "position": 3, "name": page["crumb"]},
         ],
     }, indent=2, ensure_ascii=False)

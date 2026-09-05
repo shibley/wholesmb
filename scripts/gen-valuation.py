@@ -228,7 +228,7 @@ HEADER = """<!DOCTYPE html>
     "@type": "BreadcrumbList",
     "itemListElement": [
       {{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://wholesmb.com/"}},
-      {{"@type": "ListItem", "position": 2, "name": "Buy a Business", "item": "https://wholesmb.com/acquire/"}},
+      {{"@type": "ListItem", "position": 2, "name": "Buy a Business", "item": "https://wholesmb.com/acquire"}},
       {{"@type": "ListItem", "position": 3, "name": "{noun} Valuation"}}
     ]
   }}
@@ -270,7 +270,7 @@ HEADER = """<!DOCTYPE html>
       </button>
       <div class="nav-links">
         <a href="/">Home</a>
-        <a href="/acquire/">Buy a Business</a>
+        <a href="/acquire">Buy a Business</a>
         <a href="/acquire/how-to-buy-a-business">Guides</a>
         <a href="/about.html">About</a>
       </div>
@@ -281,7 +281,7 @@ HEADER = """<!DOCTYPE html>
   <div class="container">
     <div class="breadcrumb">
       <a href="/">Home</a> <span>/</span>
-      <a href="/acquire/">Buy a Business</a> <span>/</span>
+      <a href="/acquire">Buy a Business</a> <span>/</span>
       {noun} Valuation
     </div>
   </div>
@@ -447,7 +447,7 @@ def build(n):
         b.append("            <h3>%s</h3>" % name)
         b.append("            <p>%s</p>" % blurb)
         b.append("          </a>")
-    b.append('          <a href="/acquire/" class="comparison-card">')
+    b.append('          <a href="/acquire" class="comparison-card">')
     b.append('            <span class="comparison-card-badge">Hub</span>')
     b.append("            <h3>Buy a Business Hub</h3>")
     b.append("            <p>All our acquisition guides, valuation pages, and listing resources.</p>")

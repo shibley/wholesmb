@@ -53,7 +53,7 @@ TEMPLATE = """<!DOCTYPE html>
     "@type": "BreadcrumbList",
     "itemListElement": [
       {{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://wholesmb.com/"}},
-      {{"@type": "ListItem", "position": 2, "name": "Buy a Business", "item": "https://wholesmb.com/acquire/"}},
+      {{"@type": "ListItem", "position": 2, "name": "Buy a Business", "item": "https://wholesmb.com/acquire"}},
       {{"@type": "ListItem", "position": 3, "name": "{crumb}"}}
     ]
   }}
@@ -101,7 +101,7 @@ TEMPLATE = """<!DOCTYPE html>
       </button>
       <div class="nav-links">
         <a href="/">Home</a>
-        <a href="/acquire/">Buy a Business</a>
+        <a href="/acquire">Buy a Business</a>
         <a href="/acquire/how-to-buy-a-business">Guides</a>
         <a href="/about.html">About</a>
       </div>
@@ -112,7 +112,7 @@ TEMPLATE = """<!DOCTYPE html>
   <div class="container">
     <div class="breadcrumb">
       <a href="/">Home</a> <span>/</span>
-      <a href="/acquire/">Buy a Business</a> <span>/</span>
+      <a href="/acquire">Buy a Business</a> <span>/</span>
       {crumb}
     </div>
   </div>
@@ -182,7 +182,7 @@ TEMPLATE = """<!DOCTYPE html>
             <h3>How to Value a Business</h3>
             <p>SDE, EBITDA, add-backs, and the arithmetic behind every multiple.</p>
           </a>
-          <a href="/acquire/" class="comparison-card">
+          <a href="/acquire" class="comparison-card">
             <span class="comparison-card-badge">Hub</span>
             <h3>Buy a Business Hub</h3>
             <p>All our acquisition guides, valuation pages, and listing resources.</p>
